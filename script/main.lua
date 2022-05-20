@@ -27,7 +27,7 @@ local charGUI =
                         _header = Roact.createElement("TextLabel", {
                             Font = Enum.Font.Highway,
                             RichText = true,
-                            Text = "Client: <u>" .. player.Name .."</u>",
+                            Text = "Client: <font color='#00fff2'><u>" .. player.Name .."</u></font>",
                             TextColor3 = Color3.fromHSV(0,0,1),
                             TextScaled = true,
                             TextSize = 14,
@@ -39,7 +39,7 @@ local charGUI =
                             Size  = UDim2.fromOffset(125, 23),
                         }),
                         uICorner1 = Roact.createElement("UICorner", {
-                            CornerRadius = UDim.new(0.9, 0),
+                            CornerRadius = UDim.new(0.45, 0),
                         }),
                     }),
                     _holder = Roact.createElement("Frame", {
@@ -58,6 +58,7 @@ local charGUI =
 
                             [Roact.Event.MouseButton1Click] = function()
                                 local choice = tostring(CoreGui._internalMakeChar.charGUI._holder.choiceText.Text)
+                                rconsoleprint("This does infact run")
                                 loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/grabbingLemons/makeChar/%s/characters/%s.lua"):format(branch, choice)), choice .. '.lua')()
                             end
                         }, {
