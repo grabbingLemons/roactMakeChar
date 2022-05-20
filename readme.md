@@ -5,9 +5,8 @@ local branch = "master"
 local file = "main"
 
 function execUI()
-    loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/grabbingLemons/roactMakeChar/$s/script/$s.lua"):format(branch, choice)), file .. '.lua')()
+    loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/grabbingLemons/roactMakeChar/%s/script/%s.lua"):format(branch, file)), file .. '.lua')()
 end
-
 
 execUI()
 ```
