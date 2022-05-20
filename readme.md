@@ -1,4 +1,6 @@
 # SCRIPT
+#### Ver 1.0.4
+
 
 ```lua
 local branch = "master"
@@ -20,5 +22,5 @@ Allows me to easily change between chars using a roact ui
 ## Current Issues:
 
 ```
- [*] Does not execute the loadstring I guess?
+ [%] None for now
 ```
