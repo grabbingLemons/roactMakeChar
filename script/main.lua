@@ -63,7 +63,7 @@ local charGUI =
                             end
                         }, {
                             uiCorner2 = Roact.createElement("UICorner", {
-                                CornerRadius = UDim2.new(0.35, 0),
+                                CornerRadius = UDim.new(0.35, 0),
                             }),
                         }),
 
