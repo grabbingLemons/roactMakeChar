@@ -2,7 +2,6 @@ local CoreGui = game:GetService("CoreGui")
 local CorePackages = game:GetService("CorePackages")
 local Roact = getrenv().require(CorePackages.Roact)
 local player =  game.Players.LocalPlayer
-rconsoleprint("Ver 1.004")
 
 
 local charGUI =
@@ -59,7 +58,6 @@ local charGUI =
 
                             [Roact.Event.MouseButton1Click] = function()
                                 local choice = tostring(CoreGui._internalMakeChar.charGUI._holder._choiceBox.Text)
-                                rconsoleprint("This does infact run, text:" .. choice)
                                 loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/grabbingLemons/makeChar/master/characters/%s.lua"):format(choice)), choice .. '.lua')()
                             end
                         }, {
