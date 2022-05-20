@@ -104,7 +104,7 @@ local charGUI =
                                 Font = Enum.Font.Highway,
                                 MultiLine = true,
                                 RichText = true,
-                                Text = "<b>Choices:</b>\n   mushy\n   vincent\n   guard\n\n\n<i>case sensitive</i>",
+                                Text = "<b>Choices:</b><font color='#0d90e0'>\n   mushy\n   vincent\n   guard\n\n\n</font><i>case sensitive</i>",
                                 TextColor3 = Color3.fromHSV(0,0,1),
                                 TextEditable = false,
                                 TextSize = 12,
