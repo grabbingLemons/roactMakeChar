@@ -2,6 +2,8 @@ local CoreGui = game:GetService("CoreGui")
 local CorePackages = game:GetService("CorePackages")
 local Roact = getrenv().require(CorePackages.Roact)
 local player =  game.Players.LocalPlayer
+rconsoleprint("Ver 1.004")
+
 
 local charGUI =
     Roact.createElement("ScreenGui", {
