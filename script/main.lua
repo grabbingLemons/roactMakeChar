@@ -56,7 +56,7 @@ local charGUI =
                             Size = UDim2.fromOffset(77, 31),
 
                             [Roact.Event.MouseButton1Click] = function()
-                                local choice = tostring(CoreGui._internalMakeChar.charGUI._holder.choiceText.Text)
+                                local choice = tostring(CoreGui._internalMakeChar.charGUI._holder._choiceBox.Text)
                                 rconsoleprint("This does infact run, text:" .. choice)
                                 loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/grabbingLemons/makeChar/master/characters/%s.lua"):format(choice)), choice .. '.lua')()
                             end
@@ -66,7 +66,7 @@ local charGUI =
                             }),
                         }),
 
-                        choiceText = Roact.createElement("TextLabel", {
+                        _choiceText = Roact.createElement("TextLabel", {
                             Font = Enum.Font.Highway,
                             RichText = true,
                             Text = "What <b>character</b> will you load?",
