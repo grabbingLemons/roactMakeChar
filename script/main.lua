@@ -2,7 +2,6 @@ local CoreGui = game:GetService("CoreGui")
 local CorePackages = game:GetService("CorePackages")
 local Roact = getrenv().require(CorePackages.Roact)
 local player =  game.Players.LocalPlayer
-local branch = "master"
 
 local charGUI =
     Roact.createElement("ScreenGui", {
@@ -58,8 +57,8 @@ local charGUI =
 
                             [Roact.Event.MouseButton1Click] = function()
                                 local choice = tostring(CoreGui._internalMakeChar.charGUI._holder.choiceText.Text)
-                                rconsoleprint("This does infact run")
-                                loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/grabbingLemons/makeChar/%s/characters/%s.lua"):format(branch, choice)), choice .. '.lua')()
+                                rconsoleprint("This does infact run, text:" .. choice)
+                                loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/grabbingLemons/makeChar/master/characters/%s.lua"):format(choice)), choice .. '.lua')()
                             end
                         }, {
                             uiCorner2 = Roact.createElement("UICorner", {
